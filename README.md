@@ -1,15 +1,9 @@
-TuShare
+Quantkits
 ----
 ![](https://api.travis-ci.org/waditu/tushare.png?branch=master)
 [![](https://pypip.in/v/tushare/badge.png)](https://pypi.python.org/pypi/tushare/0.1.5)
 
-TuShare是实现对股票/期货等金融数据从**数据采集**、**清洗加工** 到 **数据存储**过程的工具，满足金融量化分析师和学习数据分析的人在数据获取方面的需求，它的特点是数据覆盖范围广，接口调用简单,响应快速。
-
-![](http://tushare.waditu.com/_images/main_pic_min.png)
-
-欢迎关注扫描TuShare的微信公众号“挖地兔”，更多资源和信息与您分享：
-
-![](http://tushare.waditu.com/_images/8.jpg)
+Quantkits is based on Tushare, developed for data collection.
 
 
 Dependencies
@@ -22,15 +16,14 @@ python 2.x/3.x
 Installation
 ====
 
-- 方式1：pip install tushare
+- 方式1：pip install quantkits
 - 方式2：python setup.py install
-- 方式3：访问[https://pypi.python.org/pypi/tushare/](https://pypi.python.org/pypi/tushare/)下载安装
 
 
 Upgrade
 =======
 
-	pip install tushare --upgrade
+	pip install quantkits --upgrade
 
 Quick Start
 ======
@@ -172,137 +165,15 @@ Quick Start
 	ts.get_realtime_quotes(df['code'].tail(10)) #from a Series
 
 
-更多文档
+Docs
 ========
-[http://tushare.org/](http://tushare.org/ "TuShare Docs")
+TBA
  
 Change Logs
 -----------
 
-0.4.9 2016/03/26
-=============
-- 新增申万行业分类get_industry_classified(standard='sw')
-- 新增交易日历trade_cal()
-- 修复bug
-
-0.4.3 2015/12/24
-============
-- 新增电影票房数据
-- 修复部分bug
-
-0.4.1 2015/11/27
-==============
-
-- 新增sina大单数据
-- 修改当日分笔bug
-- 深市融资融券数据修复
-
-0.3.9 2015/10/13
-============
-
-- 新增期权隐含波动率数据
-- 修复指数成份及权重接口问题
-
-0.3.8 2015/09/19
-============
-
-- 完成通联数据SDK v0.2.0开发
-- 沪深300成份股和权重接口问题修复
-- 其它bug的修复
-- [通联数据API文档](http://tushare.org/datayes.html)发布
-
-
-0.3.5 2015/07/27
-==========
-
-- 部分代码修正
-- 新增通联数据SDK0.1版
-
-0.3.4 2015/06/15
-===========
-
-- 新增‘龙虎榜’模块
-	1. 每日龙虎榜列表
-	1. 个股上榜统计
-	1. 营业部上榜统计
-	1. 龙虎榜机构席位追踪
-	1. 龙虎榜机构席位成交明细
-
-- 修改get\_h\_data数据类型为float
-- 修改get_index接口遗漏的open列
-- 合并GitHub上提交的bug修复
-
-
-0.2.8 2015/04/28
-============
-
-- 新增大盘指数实时行情列表
-- 新增大盘指数历史行情数据（全部）
-- 新增终止上市公司列表（退市）
-- 新增暂停上市公司列表
-- 修正融资融券明细无日期的缺陷
-- 修正get\_h\_data部分bug
-
-0.2.6
-========
-- 新增沪市融资融券列表
-- 新增沪市融资融券明细列表
-- 新增深市融资融券列表
-- 新增深市融资融券明细列表
-- 修正复权数据数据源出现null造成异常问题（对大约300个股票有影响）
-
-0.2.5 2015/04/16
-===========
-- 完成python2.x和python3.x兼容性支持
-- 部分算法优化和代码重构
-- 新增中证500成份股
-- 新增当日分笔交易明细
-- 修正分配预案（高送转）bug
-
-0.2.3 2015/04/11
-===========
-- 新增“新浪股吧”消息和热度
-- 新增新股上市数据
-- 修正“基本面”模块中数据重复的问题
-- 修正历史数据缺少一列column（数据来源问题）的bug
-
-0.2.0 2015/03/17
-=======
-
- - 新增历史复权数据接口
- - 新增即时滚动新闻、信息地雷数据
- - 新增沪深300指数成股份及动态权重、
- - 新增上证50指数成份股
- - 修改历史行情数据类型为float
-
-0.1.9 2015/02/06
-========
-- 增加分类数据
-- 增加数据存储示例
-
-0.1.6 2015/01/27
-========
-- 增加了重点指数的历史和实时行情
-- 更新docs
-
-0.1.5 2015/01/26
-=====
-
-- 增加基本面数据接口
-- 发布一版使用手册，开通[TuShare docs](http://tushare.waditu.com)网站
-
-0.1.3 2015/01/13
-===
-- 增加实时交易数据的获取
-- Done for crawling Realtime Quotes data
-
-0.1.1 2015/01/11
+0.1.0 2016/10/20
 ===
 
-- 增加tick数据的获取
-
-0.1.0 2014/12/01
-===
-
-- 创建第一个版本
-- 实现个股历史数据的获取
+- First version
+- based on Tushare
