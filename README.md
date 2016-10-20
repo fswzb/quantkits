@@ -1,9 +1,9 @@
 Quantkits
 ----
-![](https://api.travis-ci.org/waditu/tushare.png?branch=master)
-[![](https://pypip.in/v/tushare/badge.png)](https://pypi.python.org/pypi/tushare/0.1.5)
+![](https://api.travis-ci.org/waditu/quantkits.png?branch=master)
+[![](https://pypip.in/v/quantkits/badge.png)](https://pypi.python.org/pypi/quantkits/0.1.5)
 
-Quantkits is based on Tushare, developed for data collection.
+Quantkits is based on quantkits, developed for data collection.
 
 
 Dependencies
@@ -29,7 +29,7 @@ Quick Start
 ======
 **Example 1.** 获取个股历史交易数据（包括均线数据）：
 
-    import tushare as ts
+    import quantkits as qk
 
 	ts.get_hist_data('600848') #一次性获取全部数据
 
@@ -125,9 +125,9 @@ Quick Start
 
 **Example 3.** 获取历史分笔数据
 
-    import tushare as ts
+    import quantkits as qk
 
-	df = ts.get_tick_data('600848',date='2014-01-09')
+	df = qk.get_tick_data('600848',date='2014-01-09')
 	df.head(10)
 
 结果显示：
@@ -149,7 +149,7 @@ Quick Start
 
 **Example 4.** 获取实时交易数据(Realtime Quotes Data)
 
-    df = ts.get_realtime_quotes('000581') #Single stock symbol
+    df = qk.get_realtime_quotes('000581') #Single stock symbol
 	df[['code','name','price','bid','ask','volume','amount','time']]
 
 结果显示：
@@ -176,4 +176,4 @@ Change Logs
 ===
 
 - First version
-- based on Tushare
+- based on quantkits
