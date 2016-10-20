@@ -1,9 +1,9 @@
-quantkits
+Quantkits
 ----
 ![](https://api.travis-ci.org/waditu/quantkits.png?branch=master)
 [![](https://pypip.in/v/quantkits/badge.png)](https://pypi.python.org/pypi/quantkits/0.1.5)
 
-quantkits is based on quantkits, developed for data collection.
+Quantkits is based on Tushare, developed for data collection.
 
 
 Dependencies
@@ -176,4 +176,4 @@ Change Logs
 ===
 
 - First version
-- based on quantkits
+- based on tushare
