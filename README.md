@@ -1,9 +1,9 @@
-Quantkits
+quantkits
 ----
 ![](https://api.travis-ci.org/waditu/quantkits.png?branch=master)
 [![](https://pypip.in/v/quantkits/badge.png)](https://pypi.python.org/pypi/quantkits/0.1.5)
 
-Quantkits is based on quantkits, developed for data collection.
+quantkits is based on quantkits, developed for data collection.
 
 
 Dependencies
@@ -31,7 +31,7 @@ Quick Start
 
     import quantkits as qk
 
-	ts.get_hist_data('600848') #一次性获取全部数据
+	qk.get_hist_data('600848') #一次性获取全部数据
 
 结果显示：
 
@@ -61,7 +61,7 @@ Quick Start
 
 设定历史数据的时间：      
 	
-	ts.get_hist_data('600848',start='2015-01-05',end='2015-01-09')
+	qk.get_hist_data('600848',start='2015-01-05',end='2015-01-09')
 
 				open    high   close     low    volume   p_change     ma5    ma10 \  
 	date                                                                            
@@ -82,16 +82,16 @@ Quick Start
 **复权历史数据**
 获取历史复权数据，分为前复权和后复权数据，接口提供股票上市以来所有历史数据，默认为前复权。如果不设定开始和结束日期，则返回近一年的复权数据，从性能上考虑，推荐设定开始日期和结束日期，而且最好不要超过一年以上，获取到数据后，请及时在本地存储。
 
-	ts.get_h_data('002337') #前复权
-	ts.get_h_data('002337',autype='hfq') #后复权
-	ts.get_h_data('002337',autype=None) #不复权
-	ts.get_h_data('002337',start='2015-01-01',end='2015-03-16') #两个日期之间的前复权数据
+	qk.get_h_data('002337') #前复权
+	qk.get_h_data('002337',autype='hfq') #后复权
+	qk.get_h_data('002337',autype=None) #不复权
+	qk.get_h_data('002337',start='2015-01-01',end='2015-03-16') #两个日期之间的前复权数据
 
 
 **Example 2.** 一次性获取最近一个日交易日所有股票的交易数据（结果显示速度取决于网速）
 	
 
-	ts.get_today_all()
+	qk.get_today_all()
 
 
 结果显示：
@@ -161,8 +161,8 @@ Quick Start
 	  
 请求多个股票方法（一次最好不要超过30个）：
     
-	ts.get_realtime_quotes(['600848','000980','000981']) #symbols from a list
-	ts.get_realtime_quotes(df['code'].tail(10)) #from a Series
+	qk.get_realtime_quotes(['600848','000980','000981']) #symbols from a list
+	qk.get_realtime_quotes(df['code'].tail(10)) #from a Series
 
 
 Docs
